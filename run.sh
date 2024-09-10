@@ -38,7 +38,8 @@ listenWindowTitle="Serial monitoring on $dir/$filename on $devport"
 echo "listenWindowTitle: $listenWindowTitle"
 # kitty --title='$listenWindowTitle' --hold --detach $listenCmd #&& sleep 1
 # source $("$listenCMD")
-eval "$listenCmd"
+# eval "$listenCmd"
+cat $devport
 
 # i3-msg [title='$listenWindowTitle'] focus && sleep 1 && 
 # xdotool type "$listenCmd" && xdotool key enter
